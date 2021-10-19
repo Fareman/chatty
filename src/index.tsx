@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-// ыфвsad
+// нигас эфио лики блики стэфио
 ReactDOM.render(
   <React.StrictMode>
     <App />
