@@ -1,0 +1,51 @@
+.input {
+  width: 354px;
+  height: 56px;
+  border: 1px solid #b3cdf8;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 15px;
+  line-height: 23px;
+  color: #333333;
+  position: relative;
+
+  &::placeholder {
+    color: #9f9f9f;
+  }
+
+  &._isON {
+    border: 1px solid #5c98f1;
+  }
+
+  &._err {
+    border: 1px solid #fb6262;
+  }
+}
+
+.input__wrapper {
+  position: relative;
+  width: 388px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    right: 16px;
+    z-index: 10;
+    transform: translateY(-50%);
+    background: url('../../assets/ErrorIcon.png') no-repeat;
+  }
+
+  &:after {
+    content: 'Something goes wrong';
+    position: absolute;
+    bottom: -35%;
+    left: 2%;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.46em;
+    color: #fb6262;
+  }
+}
